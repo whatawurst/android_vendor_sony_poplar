@@ -187,7 +187,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/sony/lilac/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/sony/lilac/proprietary/etc/permissions/com.sonyericsson.idd.xml:system/etc/permissions/com.sonyericsson.idd.xml \
+    vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.camera.addon.xml:system/etc/permissions/com.sonymobile.camera.addon.xml \
     vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.getmore.api.xml:system/etc/permissions/com.sonymobile.getmore.api.xml \
+    vendor/sony/lilac/proprietary/etc/permissions/com.sonymobile.imageprocessor.xml:system/etc/permissions/com.sonymobile.imageprocessor.xml \
     vendor/sony/lilac/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/sony/lilac/proprietary/etc/permissions/privapp-permissions-sony.xml:system/etc/permissions/privapp-permissions-sony.xml \
     vendor/sony/lilac/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
@@ -200,7 +202,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/sony/lilac/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/sony/lilac/proprietary/framework/com.sonyericsson.idd_impl.jar:system/framework/com.sonyericsson.idd_impl.jar \
+    vendor/sony/lilac/proprietary/framework/com.sonymobile.camera.addon_impl.jar:system/framework/com.sonymobile.camera.addon_impl.jar \
     vendor/sony/lilac/proprietary/framework/com.sonymobile.getmore.api.jar:system/framework/com.sonymobile.getmore.api.jar \
+    vendor/sony/lilac/proprietary/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar:system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar \
     vendor/sony/lilac/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/sony/lilac/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/sony/lilac/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
@@ -217,6 +221,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/sony/lilac/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/sony/lilac/proprietary/vendor/lib/libhazebuster.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhazebuster.so \
+    vendor/sony/lilac/proprietary/lib/libimageprocessorjni.so:system/lib/libimageprocessorjni.so \
     vendor/sony/lilac/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/sony/lilac/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/sony/lilac/proprietary/vendor/lib/libjni_blurbuster.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_blurbuster.so \
@@ -299,6 +304,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/vendor/lib64/libclearsight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclearsight.so \
     vendor/sony/lilac/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libhazebuster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhazebuster.so \
+    vendor/sony/lilac/proprietary/lib64/libimageprocessorjni.so:system/lib64/libimageprocessorjni.so \
     vendor/sony/lilac/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/sony/lilac/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libjni_blurbuster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_blurbuster.so \
@@ -363,14 +369,24 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.hardware.drm@1.0.so:system/lib64/vendor.semc.hardware.drm@1.0.so \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.hardware.secd@1.0.so:system/lib64/vendor.semc.hardware.secd@1.0.so \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.system.idd@1.0.so:system/lib64/vendor.semc.system.idd@1.0.so \
-    vendor/sony/lilac/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:system/lib64/vendor.somc.hardware.miscta@1.0.so
+    vendor/sony/lilac/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:system/lib64/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libarcsoft_handsigns.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libarcsoft_handsigns.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libhandsigns_jni.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libhandsigns_jni.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libimage_converter.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libimage_converter.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libmpbase.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libmpbase.so
 
 PRODUCT_PACKAGES += \
+    CameraAddonPermission-release \
+    CameraCommonPermission-release \
+    CameraExtensionPermission-release \
+    ImageProcessorPermission-release \
     QtiTelephonyService \
     datastatusnotification \
     embms \
     ims \
     CNEService \
+    CameraCommon \
+    SemcCameraUI-jniLibs64-xhdpi-release \
     qcrilmsgtunnel \
     qcrilhook
 PRODUCT_COPY_FILES += \
