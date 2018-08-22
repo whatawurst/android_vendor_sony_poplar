@@ -221,6 +221,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/sony/lilac/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/sony/lilac/proprietary/vendor/lib/libhazebuster.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhazebuster.so \
+    vendor/sony/lilac/proprietary/lib/libiddjni.so:system/lib/libiddjni.so \
     vendor/sony/lilac/proprietary/lib/libimageprocessorjni.so:system/lib/libimageprocessorjni.so \
     vendor/sony/lilac/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/sony/lilac/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
@@ -304,6 +305,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/vendor/lib64/libclearsight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libclearsight.so \
     vendor/sony/lilac/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libhazebuster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhazebuster.so \
+    vendor/sony/lilac/proprietary/lib64/libiddjni.so:system/lib64/libiddjni.so \
     vendor/sony/lilac/proprietary/lib64/libimageprocessorjni.so:system/lib64/libimageprocessorjni.so \
     vendor/sony/lilac/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/sony/lilac/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
@@ -370,10 +372,10 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.hardware.secd@1.0.so:system/lib64/vendor.semc.hardware.secd@1.0.so \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.system.idd@1.0.so:system/lib64/vendor.semc.system.idd@1.0.so \
     vendor/sony/lilac/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:system/lib64/vendor.somc.hardware.miscta@1.0.so \
-    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libarcsoft_handsigns.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libarcsoft_handsigns.so \
-    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libhandsigns_jni.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libhandsigns_jni.so \
-    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libimage_converter.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libimage_converter.so \
-    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libmpbase.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/arm64/libmpbase.so
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libarcsoft_handsigns.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libarcsoft_handsigns.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libhandsigns_jni.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libhandsigns_jni.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libimage_converter.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libimage_converter.so \
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libmpbase.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libmpbase.so
 
 PRODUCT_PACKAGES += \
     CameraAddonPermission-release \
