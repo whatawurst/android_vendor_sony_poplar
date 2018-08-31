@@ -372,10 +372,19 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.hardware.secd@1.0.so:system/lib64/vendor.semc.hardware.secd@1.0.so \
     vendor/sony/lilac/proprietary/lib64/vendor.semc.system.idd@1.0.so:system/lib64/vendor.semc.system.idd@1.0.so \
     vendor/sony/lilac/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:system/lib64/vendor.somc.hardware.miscta@1.0.so \
+    vendor/sony/lilac/proprietary/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libnativeeffectengine.so:system/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libnativeeffectengine.so \
+    vendor/sony/lilac/proprietary/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libyuvframe.so:system/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libyuvframe.so \
+    vendor/sony/lilac/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_jpeg_io.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_jpeg_io.so \
+    vendor/sony/lilac/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_memory_allocator.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_memory_allocator.so \
+    vendor/sony/lilac/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_panorama_gp2.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_panorama_gp2.so \
+    vendor/sony/lilac/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_sensor_fusion.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_sensor_fusion.so \
     vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libarcsoft_handsigns.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libarcsoft_handsigns.so \
     vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libhandsigns_jni.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libhandsigns_jni.so \
     vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libimage_converter.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libimage_converter.so \
-    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libmpbase.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libmpbase.so
+    vendor/sony/lilac/proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libmpbase.so:system/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/lib/arm64/libmpbase.so \
+    vendor/sony/lilac/proprietary/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libmpo.so:system/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libmpo.so \
+    vendor/sony/lilac/proprietary/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libnativebytebuffer.so:system/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libnativebytebuffer.so \
+    vendor/sony/lilac/proprietary/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libspf.so:system/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libspf.so
 
 PRODUCT_PACKAGES += \
     CameraAddonPermission-release \
@@ -386,9 +395,13 @@ PRODUCT_PACKAGES += \
     datastatusnotification \
     embms \
     ims \
+    ArtFilterCamera-xhdpi-release \
     CNEService \
     CameraCommon \
+    CameraPanorama-release \
     SemcCameraUI-jniLibs64-xhdpi-release \
+    SomcMovieCreator-release \
+    SoundPhotoCamera-xhdpi-release \
     qcrilmsgtunnel \
     qcrilhook
 PRODUCT_COPY_FILES += \
@@ -1104,7 +1117,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
     vendor/sony/lilac/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/sony/lilac/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
-    vendor/sony/lilac/proprietary/vendor/lib/libmiscta.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiscta.so \
     vendor/sony/lilac/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
     vendor/sony/lilac/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
     vendor/sony/lilac/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
@@ -1448,7 +1460,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/lilac/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/sony/lilac/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
-    vendor/sony/lilac/proprietary/vendor/lib64/libmiscta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiscta.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
     vendor/sony/lilac/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
@@ -1574,6 +1585,7 @@ PRODUCT_PACKAGES += \
     com.quicinc.cne.server@2.0 \
     libaudio_log_utils \
     libgpustats \
+    libmiscta \
     libqmiservices \
     libsdm-disp-vndapis \
     libta \

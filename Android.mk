@@ -107,6 +107,18 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := ArtFilterCamera-xhdpi-release
+LOCAL_MODULE_OWNER := sony
+LOCAL_SRC_FILES := proprietary/priv-app/ArtFilterCamera-xhdpi-release/ArtFilterCamera-xhdpi-release.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := sony
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
@@ -131,9 +143,45 @@ LOCAL_PRIVILEGED_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := CameraPanorama-release
+LOCAL_MODULE_OWNER := sony
+LOCAL_SRC_FILES := proprietary/priv-app/CameraPanorama-release/CameraPanorama-release.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := SemcCameraUI-jniLibs64-xhdpi-release
 LOCAL_MODULE_OWNER := sony
 LOCAL_SRC_FILES := proprietary/priv-app/SemcCameraUI-jniLibs64-xhdpi-release/SemcCameraUI-jniLibs64-xhdpi-release.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SomcMovieCreator-release
+LOCAL_MODULE_OWNER := sony
+LOCAL_SRC_FILES := proprietary/priv-app/SomcMovieCreator-release/SomcMovieCreator-release.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_PRIVILEGED_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := SoundPhotoCamera-xhdpi-release
+LOCAL_MODULE_OWNER := sony
+LOCAL_SRC_FILES := proprietary/priv-app/SoundPhotoCamera-xhdpi-release/SoundPhotoCamera-xhdpi-release.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -241,6 +289,18 @@ LOCAL_MODULE := libgpustats
 LOCAL_MODULE_OWNER := sony
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libgpustats.so
 LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libgpustats.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_VENDOR_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmiscta
+LOCAL_MODULE_OWNER := sony
+LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libmiscta.so
+LOCAL_SRC_FILES_32 := proprietary/vendor/lib/libmiscta.so
 LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
