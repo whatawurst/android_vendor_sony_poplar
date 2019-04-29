@@ -230,7 +230,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/etc/permissions/com.fingerprints.extension.xml:system/etc/permissions/com.fingerprints.extension.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.sonyericsson.idd.xml:system/etc/permissions/com.sonyericsson.idd.xml \
+    vendor/sony/poplar/proprietary/etc/permissions/com.sonymobile.camera.addon.xml:system/etc/permissions/com.sonymobile.camera.addon.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.sonymobile.getmore.api.xml:system/etc/permissions/com.sonymobile.getmore.api.xml \
+    vendor/sony/poplar/proprietary/etc/permissions/com.sonymobile.imageprocessor.xml:system/etc/permissions/com.sonymobile.imageprocessor.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.sonymobile.miscta.xml:system/etc/permissions/com.sonymobile.miscta.xml \
     vendor/sony/poplar/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/sony/poplar/proprietary/vendor/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
@@ -245,7 +247,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/sony/poplar/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/sony/poplar/proprietary/framework/com.sonyericsson.idd_impl.jar:system/framework/com.sonyericsson.idd_impl.jar \
+    vendor/sony/poplar/proprietary/framework/com.sonymobile.camera.addon_impl.jar:system/framework/com.sonymobile.camera.addon_impl.jar \
     vendor/sony/poplar/proprietary/framework/com.sonymobile.getmore.api.jar:system/framework/com.sonymobile.getmore.api.jar \
+    vendor/sony/poplar/proprietary/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar:system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar \
     vendor/sony/poplar/proprietary/framework/com.sonymobile.miscta_impl.jar:system/framework/com.sonymobile.miscta_impl.jar \
     vendor/sony/poplar/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/sony/poplar/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
@@ -272,6 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/sony/poplar/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/sony/poplar/proprietary/lib/libdumpframework.so:system/lib/libdumpframework.so \
+    vendor/sony/poplar/proprietary/lib/libimageprocessorjni.so:system/lib/libimageprocessorjni.so \
     vendor/sony/poplar/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/sony/poplar/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
     vendor/sony/poplar/proprietary/vendor/lib/libjni_imageutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_imageutil.so \
@@ -365,6 +370,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib64/libdevice_security_client.so:system/lib64/libdevice_security_client.so \
     vendor/sony/poplar/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/sony/poplar/proprietary/lib64/libdumpframework.so:system/lib64/libdumpframework.so \
+    vendor/sony/poplar/proprietary/lib64/libimageprocessorjni.so:system/lib64/libimageprocessorjni.so \
     vendor/sony/poplar/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/sony/poplar/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libjni_gallery_eglfence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_gallery_eglfence.so \
@@ -432,14 +438,37 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib64/vendor.semc.system.idd@1.0.so:system/lib64/vendor.semc.system.idd@1.0.so \
     vendor/sony/poplar/proprietary/lib64/vendor.somc.hardware.miscta@1.0.so:system/lib64/vendor.somc.hardware.miscta@1.0.so \
     vendor/sony/poplar/proprietary/lib64/vendor.somc.hardware.security.secd@1.0.so:system/lib64/vendor.somc.hardware.security.secd@1.0.so \
+    vendor/sony/poplar/proprietary/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libnativeeffectengine.so:system/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libnativeeffectengine.so \
+    vendor/sony/poplar/proprietary/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libyuvframe.so:system/priv-app/ArtFilterCamera-xhdpi-release/lib/armeabi/libyuvframe.so \
+    vendor/sony/poplar/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_jpeg_io.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_jpeg_io.so \
+    vendor/sony/poplar/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_memory_allocator.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_memory_allocator.so \
+    vendor/sony/poplar/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_panorama_gp2.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_panorama_gp2.so \
+    vendor/sony/poplar/proprietary/priv-app/CameraPanorama-release/lib/arm64/libmorpho_sensor_fusion.so:system/priv-app/CameraPanorama-release/lib/arm64/libmorpho_sensor_fusion.so \
+    vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libarcsoft_handsigns.so:system/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libarcsoft_handsigns.so \
+    vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libhandsigns_jni.so:system/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libhandsigns_jni.so \
+    vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libimage_converter.so:system/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libimage_converter.so \
+    vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libmpbase.so:system/priv-app/SemcCameraUI-xhdpi-release/lib/arm64/libmpbase.so \
+    vendor/sony/poplar/proprietary/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libmpo.so:system/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libmpo.so \
+    vendor/sony/poplar/proprietary/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libnativebytebuffer.so:system/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libnativebytebuffer.so \
+    vendor/sony/poplar/proprietary/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libspf.so:system/priv-app/SoundPhotoCamera-xhdpi-release/lib/armeabi/libspf.so \
     vendor/sony/poplar/proprietary/vendor/sony/touch/images/big_touch.png:$(TARGET_COPY_OUT_VENDOR)/sony/touch/images/big_touch.png \
     vendor/sony/poplar/proprietary/vendor/sony/touch/images/splash.png:$(TARGET_COPY_OUT_VENDOR)/sony/touch/images/splash.png
 
 PRODUCT_PACKAGES += \
+    CameraAddonPermission-release \
+    CameraCommonPermission-release \
+    CameraExtensionPermission-release \
+    ImageProcessorPermission-release \
     QtiTelephonyService \
     datastatusnotification \
     embms \
+    ArtFilterCamera-xhdpi-release \
     CNEService \
+    CameraCommon \
+    CameraPanorama-release \
+    SemcCameraUI-xhdpi-release \
+    SomcMovieCreator-release \
+    SoundPhotoCamera-xhdpi-release \
     ims \
     qcrilmsgtunnel \
     com.fingerprints.extension \
