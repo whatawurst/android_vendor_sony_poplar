@@ -238,6 +238,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.fingerprints.extension.xml:system/etc/permissions/com.fingerprints.extension.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/sony/poplar/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/sony/poplar/proprietary/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:system/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
@@ -265,7 +266,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/sony/poplar/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/sony/poplar/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
+    vendor/sony/poplar/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/sony/poplar/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/sony/poplar/proprietary/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar \
+    vendor/sony/poplar/proprietary/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar:system/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar \
+    vendor/sony/poplar/proprietary/framework/com.qualcomm.qti.uceservice-V2.0-java.jar:system/framework/com.qualcomm.qti.uceservice-V2.0-java.jar \
     vendor/sony/poplar/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/sony/poplar/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/sony/poplar/proprietary/framework/com.sonyericsson.idd_impl.jar:system/framework/com.sonyericsson.idd_impl.jar \
@@ -279,6 +284,8 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/sony/poplar/proprietary/framework/semcrilextension.jar:system/framework/semcrilextension.jar \
     vendor/sony/poplar/proprietary/framework/uimlpalibrary.jar:system/framework/uimlpalibrary.jar \
+    vendor/sony/poplar/proprietary/framework/vendor.qti.ims.callinfo-V1.0-java.jar:system/framework/vendor.qti.ims.callinfo-V1.0-java.jar \
+    vendor/sony/poplar/proprietary/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar:system/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar \
     vendor/sony/poplar/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/sony/poplar/proprietary/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:system/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/sony/poplar/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
@@ -288,9 +295,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib/com.qualcomm.qti.uceservice@2.0.so:system/lib/com.qualcomm.qti.uceservice@2.0.so \
     vendor/sony/poplar/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/sony/poplar/proprietary/lib/com.quicinc.cne.server@1.0.so:system/lib/com.quicinc.cne.server@1.0.so \
-    vendor/sony/poplar/proprietary/vendor/lib/hw/libdisplay.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libdisplay.default.so \
     vendor/sony/poplar/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/sony/poplar/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
+    vendor/sony/poplar/proprietary/lib/lib-imsvt.so:system/lib/lib-imsvt.so \
     vendor/sony/poplar/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/sony/poplar/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/sony/poplar/proprietary/lib/libMiscTAApi.sony.so:system/lib/libMiscTAApi.sony.so \
@@ -299,7 +306,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib/libcacao_pal.so:system/lib/libcacao_pal.so \
     vendor/sony/poplar/proprietary/lib/libcacao_process_ctrl_gateway.so:system/lib/libcacao_process_ctrl_gateway.so \
     vendor/sony/poplar/proprietary/lib/libcacao_service.so:system/lib/libcacao_service.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/sony/poplar/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
     vendor/sony/poplar/proprietary/lib/libdpmctmgr.so:system/lib/libdpmctmgr.so \
     vendor/sony/poplar/proprietary/lib/libdpmfdmgr.so:system/lib/libdpmfdmgr.so \
@@ -309,31 +315,21 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib/libimageprocessorjni.so:system/lib/libimageprocessorjni.so \
     vendor/sony/poplar/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/sony/poplar/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libjni_imageutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_imageutil.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libjni_snapcammosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_snapcammosaic.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libjni_snapcamtinyplanet.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_snapcamtinyplanet.so \
-    vendor/sony/poplar/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
+    vendor/sony/poplar/proprietary/lib/libjni_imageutil.so:system/lib/libjni_imageutil.so \
+    vendor/sony/poplar/proprietary/lib/libjni_snapcammosaic.so:system/lib/libjni_snapcammosaic.so \
+    vendor/sony/poplar/proprietary/lib/libjni_snapcamtinyplanet.so:system/lib/libjni_snapcamtinyplanet.so \
+    vendor/sony/poplar/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/sony/poplar/proprietary/lib/libqti-iopd-client_system.so:system/lib/libqti-iopd-client_system.so \
     vendor/sony/poplar/proprietary/lib/libqti-perfd-client_system.so:system/lib/libqti-perfd-client_system.so \
     vendor/sony/poplar/proprietary/lib/libqti-util_system.so:system/lib/libqti-util_system.so \
     vendor/sony/poplar/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/sony/poplar/proprietary/lib/librcc.so:system/lib/librcc.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceRecognition.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-apis.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
+    vendor/sony/poplar/proprietary/lib/libseemore.so:system/lib/libseemore.so \
     vendor/sony/poplar/proprietary/lib/libsnappy.so:system/lib/libsnappy.so \
     vendor/sony/poplar/proprietary/lib/libsys-utils-system.so:system/lib/libsys-utils-system.so \
     vendor/sony/poplar/proprietary/lib/libtlcore.so:system/lib/libtlcore.so \
-    vendor/sony/poplar/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
+    vendor/sony/poplar/proprietary/lib/libxt_native.so:system/lib/libxt_native.so \
     vendor/sony/poplar/proprietary/lib/vendor.display.color@1.0.so:system/lib/vendor.display.color@1.0.so \
     vendor/sony/poplar/proprietary/lib/vendor.display.color@1.1.so:system/lib/vendor.display.color@1.1.so \
     vendor/sony/poplar/proprietary/lib/vendor.display.color@1.2.so:system/lib/vendor.display.color@1.2.so \
@@ -387,7 +383,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib64/com.qualcomm.qti.uceservice@2.0.so:system/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/sony/poplar/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/sony/poplar/proprietary/lib64/com.quicinc.cne.server@1.0.so:system/lib64/com.quicinc.cne.server@1.0.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/hw/libdisplay.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libdisplay.default.so \
     vendor/sony/poplar/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/sony/poplar/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/sony/poplar/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -399,7 +394,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/sony/poplar/proprietary/lib64/libcacao_client.so:system/lib64/libcacao_client.so \
     vendor/sony/poplar/proprietary/lib64/libcacao_pal.so:system/lib64/libcacao_pal.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromaflash.so \
     vendor/sony/poplar/proprietary/lib64/libdevice_security_client.so:system/lib64/libdevice_security_client.so \
     vendor/sony/poplar/proprietary/lib64/libdiag_system.so:system/lib64/libdiag_system.so \
     vendor/sony/poplar/proprietary/lib64/libdpmctmgr.so:system/lib64/libdpmctmgr.so \
@@ -410,35 +404,21 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/lib64/libimageprocessorjni.so:system/lib64/libimageprocessorjni.so \
     vendor/sony/poplar/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/sony/poplar/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_gallery_eglfence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_gallery_eglfence.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_gallery_filters.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_gallery_filters.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_gallery_jpegstream.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_gallery_jpegstream.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_imageutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_imageutil.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_pacprocessor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_pacprocessor.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_snapcammosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_snapcammosaic.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libjni_snapcamtinyplanet.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjni_snapcamtinyplanet.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboptizoom.so \
+    vendor/sony/poplar/proprietary/lib64/libjni_imageutil.so:system/lib64/libjni_imageutil.so \
+    vendor/sony/poplar/proprietary/lib64/libjni_snapcammosaic.so:system/lib64/libjni_snapcammosaic.so \
+    vendor/sony/poplar/proprietary/lib64/libjni_snapcamtinyplanet.so:system/lib64/libjni_snapcamtinyplanet.so \
+    vendor/sony/poplar/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/sony/poplar/proprietary/lib64/libqti-iopd-client_system.so:system/lib64/libqti-iopd-client_system.so \
     vendor/sony/poplar/proprietary/lib64/libqti-perfd-client_system.so:system/lib64/libqti-perfd-client_system.so \
     vendor/sony/poplar/proprietary/lib64/libqti-util_system.so:system/lib64/libqti-util_system.so \
     vendor/sony/poplar/proprietary/lib64/libqti_performance.so:system/lib64/libqti_performance.so \
     vendor/sony/poplar/proprietary/lib64/librcc.so:system/lib64/librcc.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceRecognition.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsdm-disp-apis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-apis.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libseemore.so \
+    vendor/sony/poplar/proprietary/lib64/libseemore.so:system/lib64/libseemore.so \
     vendor/sony/poplar/proprietary/lib64/libsnappy.so:system/lib64/libsnappy.so \
     vendor/sony/poplar/proprietary/lib64/libsys-utils-system.so:system/lib64/libsys-utils-system.so \
     vendor/sony/poplar/proprietary/lib64/libtlcore.so:system/lib64/libtlcore.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
+    vendor/sony/poplar/proprietary/lib64/libxt_native.so:system/lib64/libxt_native.so \
     vendor/sony/poplar/proprietary/lib64/vendor.display.color@1.0.so:system/lib64/vendor.display.color@1.0.so \
     vendor/sony/poplar/proprietary/lib64/vendor.display.color@1.1.so:system/lib64/vendor.display.color@1.1.so \
     vendor/sony/poplar/proprietary/lib64/vendor.display.color@1.2.so:system/lib64/vendor.display.color@1.2.so \
@@ -502,6 +482,7 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     datastatusnotification \
     embms \
+    uceShimService \
     ArtFilterCamera-xxhdpi-release \
     CNEService \
     CameraCommon \
@@ -510,9 +491,11 @@ PRODUCT_PACKAGES += \
     SemcCameraUI-xxhdpi-release \
     SomcMovieCreator-release \
     SoundPhotoCamera-xxhdpi-release \
+    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    xtra_t_app \
     com.fingerprints.extension \
     qcrilhook
 PRODUCT_COPY_FILES += \
@@ -535,7 +518,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/bin/hw/android.hardware.drm@1.1-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.1-service.widevine \
     vendor/sony/poplar/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/sony/poplar/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
-    vendor/sony/poplar/proprietary/vendor/bin/hw/display_cb:$(TARGET_COPY_OUT_VENDOR)/bin/hw/display_cb \
     vendor/sony/poplar/proprietary/vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/fpc_fingerprint@2.1_HIDL-service \
     vendor/sony/poplar/proprietary/vendor/bin/hw/illumination_service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/illumination_service \
     vendor/sony/poplar/proprietary/vendor/bin/hw/kobjeventd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/kobjeventd \
@@ -878,7 +860,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@3.0-service-qti.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/fpc_fingerprint@2.1_HIDL-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fpc_fingerprint@2.1_HIDL-service.rc \
-    vendor/sony/poplar/proprietary/vendor/etc/init/init.display_cb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.display_cb.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/init.illumination_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.illumination_service.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/init.keyprovd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.keyprovd.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/init.kobjeventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.kobjeventd.rc \
@@ -902,10 +883,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/etc/init/vendor.somc.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.somc.hardware.wifi@2.0-service.rc \
     vendor/sony/poplar/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/sony/poplar/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
-    vendor/sony/poplar/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    vendor/sony/poplar/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    vendor/sony/poplar/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
-    vendor/sony/poplar/proprietary/vendor/etc/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml \
     vendor/sony/poplar/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
     vendor/sony/poplar/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/sony/poplar/proprietary/vendor/etc/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf \
@@ -1071,6 +1048,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/sony/poplar/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.0.so \
@@ -1085,6 +1063,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
     vendor/sony/poplar/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/sony/poplar/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/sony/poplar/proprietary/vendor/lib/hw/android.hardware.gnss@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@1.1-impl-qti.so \
     vendor/sony/poplar/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/sony/poplar/proprietary/vendor/lib/hw/camera.poplar.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.poplar.so \
     vendor/sony/poplar/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
@@ -1151,6 +1130,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libadsp_hvx_callback_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_hvx_callback_skel.so \
     vendor/sony/poplar/proprietary/vendor/lib/libadsp_hvx_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_hvx_stub.so \
     vendor/sony/poplar/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libalarmservice_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalarmservice_jni.so \
     vendor/sony/poplar/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/sony/poplar/proprietary/vendor/lib/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioalsa.so \
     vendor/sony/poplar/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
@@ -1162,6 +1142,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libcameralight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameralight.so \
     vendor/sony/poplar/proprietary/vendor/lib/libcammw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcammw.so \
     vendor/sony/poplar/proprietary/vendor/lib/libcammw_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcammw_util.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromaflash.so \
     vendor/sony/poplar/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
     vendor/sony/poplar/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
     vendor/sony/poplar/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
@@ -1189,9 +1170,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
     vendor/sony/poplar/proprietary/vendor/lib/libfeedbackhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeedbackhandler.so \
     vendor/sony/poplar/proprietary/vendor/lib/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflp.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdtap.so \
     vendor/sony/poplar/proprietary/vendor/lib/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofence.so \
     vendor/sony/poplar/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
     vendor/sony/poplar/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
     vendor/sony/poplar/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/sony/poplar/proprietary/vendor/lib/libhal_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhal_dbg.so \
     vendor/sony/poplar/proprietary/vendor/lib/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpclient.so \
@@ -1218,6 +1201,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so \
     vendor/sony/poplar/proprietary/vendor/lib/libloc_ds_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_ds_api.so \
     vendor/sony/poplar/proprietary/vendor/lib/libloc_externalDr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_externalDr.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libloc_externalDrcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_externalDrcore.so \
     vendor/sony/poplar/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
     vendor/sony/poplar/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
     vendor/sony/poplar/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
@@ -1242,6 +1226,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
     vendor/sony/poplar/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
     vendor/sony/poplar/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/sony/poplar/proprietary/vendor/lib/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboptizoom.so \
     vendor/sony/poplar/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
     vendor/sony/poplar/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
     vendor/sony/poplar/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
@@ -1270,6 +1255,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-util.so \
     vendor/sony/poplar/proprietary/vendor/lib/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-utils.so \
     vendor/sony/poplar/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libquipc_os_api.so \
     vendor/sony/poplar/proprietary/vendor/lib/librebuffering.so:$(TARGET_COPY_OUT_VENDOR)/lib/librebuffering.so \
     vendor/sony/poplar/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
     vendor/sony/poplar/proprietary/vendor/lib/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-qmi-1.so \
@@ -1278,12 +1264,23 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
     vendor/sony/poplar/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/sony/poplar/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveBlobDescriptor_stub.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
     vendor/sony/poplar/proprietary/vendor/lib/libscveFaceLandmarks.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceLandmarks.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveFaceRecognition.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscvePanorama_lite.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libseemore.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
     vendor/sony/poplar/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
@@ -1342,6 +1339,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib/libthermal_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermal_engine.so \
     vendor/sony/poplar/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/sony/poplar/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
+    vendor/sony/poplar/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/sony/poplar/proprietary/vendor/lib/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libulp2.so \
     vendor/sony/poplar/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
     vendor/sony/poplar/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
@@ -1447,6 +1445,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/sony/poplar/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.0.so \
@@ -1459,6 +1458,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
     vendor/sony/poplar/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/sony/poplar/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/hw/android.hardware.gnss@1.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@1.1-impl-qti.so \
     vendor/sony/poplar/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
     vendor/sony/poplar/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/sony/poplar/proprietary/vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so \
@@ -1521,6 +1521,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libalarmservice_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalarmservice_jni.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libaudioalsa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioalsa.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
@@ -1530,6 +1531,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libcacao_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacao_common.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libcameralight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameralight.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libcammw_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcammw_util.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libchromaflash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromaflash.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
@@ -1552,6 +1554,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libfeedbackhandler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeedbackhandler.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libflp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libflp.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libgeofence.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofence.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
@@ -1578,6 +1581,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libloc_ds_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_ds_api.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libloc_externalDr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_externalDr.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libloc_externalDrcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_externalDrcore.so \
     vendor/sony/poplar/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     vendor/sony/poplar/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/sony/poplar/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
@@ -1587,12 +1591,14 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_dbg.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_tintless_algo.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal_proprietary.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnlnetmgr.so \
     vendor/sony/poplar/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/liboptizoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboptizoom.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
@@ -1617,6 +1623,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libqti-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-util.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libqti-utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqti-utils.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libquipc_os_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libquipc_os_api.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librebuffering.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librebuffering.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
@@ -1625,7 +1632,17 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno_sha1.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveBlobDescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveBlobDescriptor_stub.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libscveFaceLandmarks.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceLandmarks.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveFaceRecognition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveFaceRecognition.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscvePanorama.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libscvePanorama_lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscvePanorama_lite.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-diag.so \
@@ -1633,6 +1650,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libseemore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libseemore.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor1.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_reg.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
@@ -1651,6 +1669,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libtpm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtpm.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libulp2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libulp2.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
