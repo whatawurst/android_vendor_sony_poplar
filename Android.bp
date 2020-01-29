@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -144,6 +144,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "CustomizationSelector",
+	owner: "sony",
+	apk: "proprietary/priv-app/CustomizationSelector/CustomizationSelector.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "SemcCameraUI-xxhdpi-release",
 	owner: "sony",
 	apk: "proprietary/priv-app/SemcCameraUI-xxhdpi-release/SemcCameraUI-xxhdpi-release.apk",
@@ -180,6 +191,17 @@ android_app_import {
 	name: "WfdService",
 	owner: "sony",
 	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "sony",
+	apk: "proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -592,7 +614,7 @@ android_app_import {
 	name: "TimeService",
 	owner: "sony",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
-	certificate: "platform",
+	certificate: ":timeservice_app_cert-legacy-um",
 	dex_preopt: {
 		enabled: false,
 	},
