@@ -538,8 +538,6 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xxhdpi-release/lib/arm64/libhandsigns_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SemcCameraUI-xxhdpi-release/lib/arm64/libhandsigns_jni.so \
     vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xxhdpi-release/lib/arm64/libimage_converter.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SemcCameraUI-xxhdpi-release/lib/arm64/libimage_converter.so \
     vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xxhdpi-release/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SemcCameraUI-xxhdpi-release/lib/arm64/libmpbase.so \
-    vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xxhdpi-release/oat/arm64/SemcCameraUI-xxhdpi-release.odex:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SemcCameraUI-xxhdpi-release/oat/arm64/SemcCameraUI-xxhdpi-release.odex \
-    vendor/sony/poplar/proprietary/priv-app/SemcCameraUI-xxhdpi-release/oat/arm64/SemcCameraUI-xxhdpi-release.vdex:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SemcCameraUI-xxhdpi-release/oat/arm64/SemcCameraUI-xxhdpi-release.vdex \
     vendor/sony/poplar/proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/lib/armeabi/libmpo.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SoundPhotoCamera-xxhdpi-release/lib/armeabi/libmpo.so \
     vendor/sony/poplar/proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/lib/armeabi/libnativebytebuffer.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SoundPhotoCamera-xxhdpi-release/lib/armeabi/libnativebytebuffer.so \
     vendor/sony/poplar/proprietary/priv-app/SoundPhotoCamera-xxhdpi-release/lib/armeabi/libspf.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/SoundPhotoCamera-xxhdpi-release/lib/armeabi/libspf.so \
