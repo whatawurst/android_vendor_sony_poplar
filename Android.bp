@@ -188,17 +188,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "dpmserviceapp",
-	owner: "sony",
-	apk: "proprietary/priv-app/dpmserviceapp/dpmserviceapp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "ims",
 	owner: "sony",
 	apk: "proprietary/priv-app/ims/ims.apk",
@@ -218,6 +207,18 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "sony",
+	apk: "proprietary/product/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
 }
 
 dex_import {
@@ -459,25 +460,6 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libmiscta.so"],
-		},
-	},
-	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libqmi_cci",
-	owner: "sony",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libqmi_cci.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqmi_cci.so"],
 		},
 	},
 	compile_multilib: "both",
