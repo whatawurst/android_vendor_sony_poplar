@@ -93,17 +93,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "CustomizationSelector",
-	owner: "sony",
-	apk: "proprietary/priv-app/CustomizationSelector/CustomizationSelector.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "SomcMovieCreator-release",
 	owner: "sony",
 	apk: "proprietary/priv-app/SomcMovieCreator-release/SomcMovieCreator-release.apk",
