@@ -92,9 +92,207 @@ dex_import {
 }
 
 dex_import {
+	name: "com.qti.snapdragon.sdk.display",
+	owner: "sony",
+	jars: ["proprietary/framework/com.qti.snapdragon.sdk.display.jar"],
+}
+
+dex_import {
+	name: "com.sonymobile.getmore.api",
+	owner: "sony",
+	jars: ["proprietary/framework/com.sonymobile.getmore.api.jar"],
+}
+
+dex_import {
+	name: "com.sonymobile.miscta_impl",
+	owner: "sony",
+	jars: ["proprietary/framework/com.sonymobile.miscta_impl.jar"],
+}
+
+dex_import {
+	name: "semcrilextension",
+	owner: "sony",
+	jars: ["proprietary/framework/semcrilextension.jar"],
+}
+
+dex_import {
+	name: "tcmclient",
+	owner: "sony",
+	jars: ["proprietary/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "QtiTelephonyServicelibrary",
+	owner: "sony",
+	jars: ["proprietary/product/framework/QtiTelephonyServicelibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "embmslibrary",
+	owner: "sony",
+	jars: ["proprietary/product/framework/embmslibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
 	name: "qcrilhook",
 	owner: "sony",
 	jars: ["proprietary/product/framework/qcrilhook.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "sony",
+	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "uimlpalibrary",
+	owner: "sony",
+	jars: ["proprietary/product/framework/uimlpalibrary.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "sony",
+	jars: ["proprietary/product/framework/com.qti.dpmframework.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "sony",
+	jars: ["proprietary/product/framework/dpmapi.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.factory-V1.1-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.hardware.factory-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.1-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
+	product_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "sony",
+	jars: ["proprietary/product/framework/vendor.qti.latency-V2.0-java.jar"],
 	product_specific: true,
 }
 
