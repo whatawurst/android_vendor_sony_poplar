@@ -1,0 +1,1 @@
+libMiscTAApi.sony.so
