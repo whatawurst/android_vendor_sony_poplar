@@ -487,6 +487,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/bin/hw/fpc_fingerprint@2.1_HIDL-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/fpc_fingerprint@2.1_HIDL-service \
     vendor/sony/poplar/proprietary/vendor/bin/hw/illumination_service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/illumination_service \
     vendor/sony/poplar/proprietary/vendor/bin/hw/kobjeventd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/kobjeventd \
+    vendor/sony/poplar/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
     vendor/sony/poplar/proprietary/vendor/bin/hw/touchbacklightd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/touchbacklightd \
     vendor/sony/poplar/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/sony/poplar/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
@@ -825,6 +826,7 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/etc/init/init.taqmi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.taqmi.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/init.touchbacklightd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.touchbacklightd.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/mlog_qmi_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mlog_qmi_service.rc \
+    vendor/sony/poplar/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/sct_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sct_service.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/taimport_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/taimport_vendor.rc \
     vendor/sony/poplar/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
@@ -1397,11 +1399,11 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-logger.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-qmi-1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-qmi-1.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
-    vendor/sony/poplar/proprietary/vendor/lib64/libril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
     vendor/sony/poplar/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
@@ -1447,6 +1449,9 @@ PRODUCT_COPY_FILES += \
     vendor/sony/poplar/proprietary/vendor/lib64/libxtwifi_server_protocol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol.so \
     vendor/sony/poplar/proprietary/vendor/lib64/libxtwifi_server_protocol_uri_v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtwifi_server_protocol_uri_v3.so \
     vendor/sony/poplar/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
+    vendor/sony/poplar/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
     vendor/sony/poplar/proprietary/vendor/lib64/sensor_calibrate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensor_calibrate.so \
     vendor/sony/poplar/proprietary/vendor/lib64/sensors.finger-pickup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.finger-pickup.so \
     vendor/sony/poplar/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
